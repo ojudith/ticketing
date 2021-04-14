@@ -41,4 +41,7 @@ Route::get('/search', 'TicketsController@search');
 
 Route::get('/adminsearch', 'TicketsController@adminsearch');
 
-URL::forceScheme('https');
+if (env('APP_ENV') !== 'local') {
+    URL::forceScheme('https');
+}
+
