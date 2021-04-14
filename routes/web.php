@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\URL;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -38,3 +40,5 @@ Route::post('/comment', 'CommentsController@newComment');
 Route::get('/search', 'TicketsController@search');
 
 Route::get('/adminsearch', 'TicketsController@adminsearch');
+
+URL::forceScheme('https');
