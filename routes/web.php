@@ -30,15 +30,6 @@ Auth::routes();
 Route::get('/dashboard', 'DashboardController@index');
 
 
-// Route::get('sendemail', function () {
-// $data = array( 'name' => "Learning Laravel", );
-// Mail::send('emails.welcome', $data, function ($message) {
-// $message->from('from@example.com', 'Learning Laravel is very cool');
-// $message->to('judy_beauty@junik.com')->subject('Learning Laravel test email');
-// });
-// return "Your email has been sent successfully";
-// });
-
 Route::get('admin/routes','DashboardController@admin')->middleware('admin');
 
 

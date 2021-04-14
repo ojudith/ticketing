@@ -19,7 +19,7 @@
 @endif
 <!-- end here -->
     @if(auth()->user()->isAdmin == 1)
-    <div class="admin-banner">
+    {{-- <div class="admin-banner">
     <div class="col-md-12">
         <div class="admin-banner2">
        <h4> welcome to admin area <span>{{strtoupper(auth::user()->name)}}</span></h4>
@@ -42,6 +42,14 @@
         </div>
 </div>
 </div>
+</div> --}}
+
+<div class="container">
+    <div class="card card-body bg-warning admin-card">
+        <!-- <h3 class="text-white">Admin area</h3> -->
+       <p>Welcome to admin area</p>
+      <p> <a href="{{url('admin/routes')}}">click to admin dashboard <i class="fa fa-user"></i></a></p>  
+    </div>
 </div>
 
         <!-- ends here -->
