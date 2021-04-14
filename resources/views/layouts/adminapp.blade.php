@@ -10,16 +10,16 @@
     <title>{{ config('app.name', 'Judy Ticketing Platform') }}</title>
 
     <!-- Scripts -->
-    <script src="js/app.js" defer></script>
+    <script src="{{ secure_asset('js/app.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Styles -->
-    <link href="css/app.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="{{ secure_asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/styles.css') }}" rel="stylesheet">
+    <link href="{{ secure_asset('css/font-awesome.css') }}" rel="stylesheet">
 </head>
 <body>
     <div id="app">
