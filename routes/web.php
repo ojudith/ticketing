@@ -41,4 +41,4 @@ Route::get('/search', 'TicketsController@search');
 
 Route::get('/adminsearch', 'TicketsController@adminsearch');
 
-//URL::forceScheme('https');
+URL::forceScheme('https');
